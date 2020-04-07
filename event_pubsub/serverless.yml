@@ -188,6 +188,7 @@ functions:
         - ${file(./config.${self:provider.stage}.json):VPC2}
     events:
       - schedule: rate(2 minutes)
+        enabled: true
 
   token_stake_event_publisher:
     warmup: true
@@ -206,6 +207,7 @@ functions:
         - ${file(./config.${self:provider.stage}.json):VPC2}
     events:
       - schedule: rate(2 minutes)
+        enabled: true
 
 
 
